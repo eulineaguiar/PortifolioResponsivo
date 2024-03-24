@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portifólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Aline Aguiar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Aline Aguiar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="img/FotoAline.jpeg" alt="Foto Aline Aguiar" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Olá, eu sou a</p>
+      <h1 class="title">Aline Aguiar</h1>
+      <p class="section__text__p2">Desenvolvedora Front-End</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Baixar CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contato
+        </button>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Saiba Mais</p>
+    <h1 class="title">Sobre mim</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="img/FotoAline.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="img/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiência</h3>
+            <p>Em busca <br /> do Primeiro Emprego na Área</p>
+          </div>
+          <div class="details-container">
+            <img src="img/education.png" alt="Education icon" class="icon" />
+            <h3>Educação</h3>
+            <p>Colégio Estadual<br />Antonio Carlos Magalhães</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A Escola CEACM (Colégio Estadual Antonio Carlos Magalhães) é uma instituição de ensino reconhecida pela sua excelência acadêmica e compromisso com o desenvolvimento integral dos alunos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore minha</p>
+    <h1 class="title">Experiência</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Desenvolvedora Front-End</h2>
+          <div class="article-container">
+            <article>
+              <img src="img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            </article>
+            <article>
+              <img src="img/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>UI/UX Design</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div>
+        </div>
+    <img src="img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Procurar Meus Recentes</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="img/projeto.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Primeiro Projeto</h2>
+          <div class="btn-container">
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="img/projeto.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Segundo Projeto</h2>
+          <div class="btn-container">
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="img/projeto.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Terceiro Projeto</h2>
+          <div class="btn-container">
+          </div>
+        </div>
+      </div>
+    </div>
+          <img
+        src="img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entre em contato</p>
+      <h1 class="title">Fale Comigo</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="img/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">alineaguiarsilva@outlook.com.br</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="img/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aline-aguiar-824270236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
